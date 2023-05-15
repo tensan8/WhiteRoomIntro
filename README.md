@@ -1,7 +1,7 @@
 # About This Repo
 This repo was used to track the changes made into the WhiteRoomIntro project.\
 The project was developed using TypeScript, React, and Tailwind.\
-The structure of the project is following the concept of atomic design.\
+The structure of the project is following the concept of atomic design with some modifications where the atom structure was removed due to simplicity.\
 Prettier and eslint were also applied into the project.
 
 # Links
