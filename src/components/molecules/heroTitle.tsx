@@ -9,7 +9,7 @@ const HeroTitle = (): React.ReactElement => {
                 data-atropos-offset="5"
             >
                 <h1
-                    className="w-32 text-5xl font-medium break-words tracking-widest"
+                    className="w-32 text-5xl font-medium text-logo-black break-words tracking-widest"
                     data-atropos-offset="15"
                 >
                     ALESANDRO
