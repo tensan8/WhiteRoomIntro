@@ -3,7 +3,7 @@ import HeadingAndContent, {
     HeadingAndContentProps,
 } from '../molecules/headingAndContent';
 
-interface BannerWithContentProps extends HeadingAndContentProps {
+export interface BannerWithContentProps extends HeadingAndContentProps {
     youtubeUrl?: string;
     isLandscape?: boolean;
 }
