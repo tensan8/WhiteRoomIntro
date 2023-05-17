@@ -20,7 +20,7 @@ const FooterContent = (): React.ReactElement => {
             </p>
             <p>
                 <a
-                    href="https://wa.me/6282154244142"
+                    href="https://wa.me/6282154244124"
                     className="w-fit tracking-widest"
                 >
                     (+62) 821-5424-4124
