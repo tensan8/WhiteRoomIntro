@@ -13,6 +13,7 @@ const BannerWithDescription = ({
     content,
     youtubeUrl,
     isLandscape,
+    textParallaxOptions,
 }: BannerWithContentProps) => {
     return isLandscape ? (
         <div className="flex w-full">
@@ -21,7 +22,7 @@ const BannerWithDescription = ({
                 <HeadingAndContent
                     title={title}
                     content={content}
-                    parallaxOptions={{ startScroll: 500, endScroll: 700 }}
+                    textParallaxOptions={textParallaxOptions}
                 />
             </div>
         </div>
@@ -35,7 +36,7 @@ const BannerWithDescription = ({
                 <HeadingAndContent
                     title={title}
                     content={content}
-                    parallaxOptions={{ startScroll: 1450, endScroll: 1600 }}
+                    textParallaxOptions={textParallaxOptions}
                 />
             </div>
         </div>

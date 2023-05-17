@@ -37,6 +37,10 @@ const VideoContentTemplate = ({
                                 }
                                 title={bigVideoContent?.Title}
                                 content={bigVideoContent?.Content}
+                                textParallaxOptions={{
+                                    startScroll: 500,
+                                    endScroll: 700,
+                                }}
                             />
                         </Parallax>
                     </div>
@@ -56,6 +60,10 @@ const VideoContentTemplate = ({
                                 title={leftVideoContent?.Title}
                                 content={leftVideoContent?.Content}
                                 isLandscape={false}
+                                textParallaxOptions={{
+                                    startScroll: 1450,
+                                    endScroll: 1600,
+                                }}
                             />
                         </Parallax>
                         <Parallax
@@ -73,6 +81,10 @@ const VideoContentTemplate = ({
                                 title={rightVideoContent?.Title}
                                 content={rightVideoContent?.Content}
                                 isLandscape={false}
+                                textParallaxOptions={{
+                                    startScroll: 1450,
+                                    endScroll: 1600,
+                                }}
                             />
                         </Parallax>
                     </div>
