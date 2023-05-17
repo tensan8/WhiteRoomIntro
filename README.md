@@ -6,7 +6,7 @@ Prettier and eslint were also applied into the project.
 
 # Things to Fix
 
-1. Responsiveness for mobiles
+1. Responsiveness for mobiles (Layout only looks good on Desktop sized screen)
 
 # Links
 **Design:** [Figma](https://www.figma.com/file/mitbrod8ZvhaszqNJlBPTA/White-Room-Screening-Design?type=design&node-id=0%3A1&t=aYA3d47c41gZysCC-1)
