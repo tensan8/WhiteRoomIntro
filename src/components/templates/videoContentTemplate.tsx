@@ -4,6 +4,7 @@ import BannerWithDescription from '../organism/bannerWithDescription';
 import Footer from '../organism/footer';
 import FooterContent from '../molecules/footerContent';
 import { SingleVideoContentSchema } from '../../utils/singleVideoContentSchema';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 interface VideoContentTemplateProps {
     bigVideoContent?: SingleVideoContentSchema;
@@ -20,39 +21,62 @@ const VideoContentTemplate = ({
         <div className="flex flex-col">
             <div className="w-screen px-40 mb-40">
                 <HeroTitle />
-                <div className="mt-56">
-                    <BannerWithDescription
-                        youtubeUrl={
-                            bigVideoContent?.Url != ''
-                                ? bigVideoContent?.Url
-                                : undefined
-                        }
-                        title={bigVideoContent?.Title}
-                        content={bigVideoContent?.Content}
-                    />
-                </div>
-                <div className="mt-56 grid grid-cols-2 gap-x-12">
-                    <BannerWithDescription
-                        youtubeUrl={
-                            leftVideoContent?.Url != ''
-                                ? leftVideoContent?.Url
-                                : undefined
-                        }
-                        title={leftVideoContent?.Title}
-                        content={leftVideoContent?.Content}
-                        isLandscape={false}
-                    />
-                    <BannerWithDescription
-                        youtubeUrl={
-                            rightVideoContent?.Url != ''
-                                ? rightVideoContent?.Url
-                                : undefined
-                        }
-                        title={rightVideoContent?.Title}
-                        content={rightVideoContent?.Content}
-                        isLandscape={false}
-                    />
-                </div>
+                <ParallaxProvider>
+                    <div className="mt-96">
+                        <Parallax
+                            translateY={[40, 0]}
+                            opacity={[0, 1]}
+                            startScroll={0}
+                            endScroll={600}
+                        >
+                            <BannerWithDescription
+                                youtubeUrl={
+                                    bigVideoContent?.Url != ''
+                                        ? bigVideoContent?.Url
+                                        : undefined
+                                }
+                                title={bigVideoContent?.Title}
+                                content={bigVideoContent?.Content}
+                            />
+                        </Parallax>
+                    </div>
+                    <div className="mt-96 grid grid-cols-2 gap-x-12">
+                        <Parallax
+                            translateY={[40, 0]}
+                            opacity={[0, 1]}
+                            startScroll={1000}
+                            endScroll={1500}
+                        >
+                            <BannerWithDescription
+                                youtubeUrl={
+                                    leftVideoContent?.Url != ''
+                                        ? leftVideoContent?.Url
+                                        : undefined
+                                }
+                                title={leftVideoContent?.Title}
+                                content={leftVideoContent?.Content}
+                                isLandscape={false}
+                            />
+                        </Parallax>
+                        <Parallax
+                            translateY={[40, 0]}
+                            opacity={[0, 1]}
+                            startScroll={1250}
+                            endScroll={1500}
+                        >
+                            <BannerWithDescription
+                                youtubeUrl={
+                                    rightVideoContent?.Url != ''
+                                        ? rightVideoContent?.Url
+                                        : undefined
+                                }
+                                title={rightVideoContent?.Title}
+                                content={rightVideoContent?.Content}
+                                isLandscape={false}
+                            />
+                        </Parallax>
+                    </div>
+                </ParallaxProvider>
             </div>
             <Footer>
                 <FooterContent />
