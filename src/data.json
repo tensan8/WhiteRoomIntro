@@ -2,16 +2,16 @@
   "BigVideo": {
     "Title": "Me, Myself, & Penang",
     "Content": "Alesandro is a Computer Science fresh-graduate from Swinburne Sarawak. He has something to talk about his experience and something related to Penang, Malaysia.",
-    "Url": ""
+    "Url": "https://www.youtube.com/embed/sba4fbHwdpE"
   },
   "LeftVideo": {
     "Title": "The Discovery",
     "Content": "Alesandro is talking about his journey in being a Software Engineer starting from realizing that he likes things related to technology until diving deeper into the art of programming.",
-    "Url": ""
+    "Url": "https://www.youtube.com/embed/04HR1SstUEs"
   },
   "RightVideo": {
     "Title": "Passion and Collaboration",
     "Content": "Realizing a solid idea requires a lot of plannings and iterations to create a high-quality product. Working with people of the same visions will be a huge advantage for Alesandro.",
-    "Url": ""
+    "Url": "https://www.youtube.com/embed/efuyrDkeg_M"
   }
 }
